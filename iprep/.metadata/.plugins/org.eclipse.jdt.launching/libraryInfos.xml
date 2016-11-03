@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="C:\eclipse\MyEclipse\jre" version="1.5.0_11">
+<bootpath>
+<entry path="C:\eclipse\MyEclipse\jre\lib\rt.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\i18n.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\jsse.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\jce.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\charsets.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\eclipse\MyEclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\eclipse\MyEclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\eclipse\MyEclipse" version="1.5.0_11">
+<bootpath>
+<entry path="C:\eclipse\MyEclipse\jre\lib\rt.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\i18n.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\sunrsasign.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\jsse.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\jce.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\lib\charsets.jar"/>
+<entry path="C:\eclipse\MyEclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\eclipse\MyEclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\eclipse\MyEclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

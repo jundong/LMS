@@ -1,0 +1,1 @@
+INDEX VERSION 1.121+E:\WorkSpace\MainLin\LRS\inventory\.metadata\.plugins\org.eclipse.jdt.core

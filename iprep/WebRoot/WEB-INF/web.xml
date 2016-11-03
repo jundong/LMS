@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  
+	<listener>  
+	<listener-class>com.spirent.timer.TimerListener</listener-class>
+	</listener>
+
+	<servlet>  
+		<servlet-name>scheduler</servlet-name>
+		<servlet-class>
+			com.spirent.javaconnector.SchedulerBasicConnector
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>scheduler</servlet-name>
+		<url-pattern>/scheduler/events.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>treexml</servlet-name>
+		<servlet-class>
+			com.spirent.javaconnector.TreeBasicConnector
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>treexml</servlet-name>
+		<url-pattern>/tree/treeevents.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>connection</servlet-name>
+		<servlet-class>com.spirent.connection.ConnectionType</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>connection</servlet-name>
+		<url-pattern>/connection.do</url-pattern>
+	</servlet-mapping>	
+
+		<servlet>
+		<servlet-name>avconnection</servlet-name>
+		<servlet-class>
+			com.spirent.connection.AVConnection
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>avconnection</servlet-name>
+		<url-pattern>/avconnection.do</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>dutconnection</servlet-name>
+		<servlet-class>
+			com.spirent.connection.DUTConnection
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dutconnection</servlet-name>
+		<url-pattern>/dutconnection.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addresource</servlet-name>
+		<servlet-class>
+			com.spirent.addresource.AddResource
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addresource</servlet-name>
+		<url-pattern>/addresource.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adddut</servlet-name>
+		<servlet-class>
+			com.spirent.addresource.AddDUT
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adddut</servlet-name>
+		<url-pattern>/adddut.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addtestbed</servlet-name>
+		<servlet-class>
+			com.spirent.addresource.AddTestBed
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addtestbed</servlet-name>
+		<url-pattern>/addtestbed.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>adddutintf</servlet-name>
+		<servlet-class>
+			com.spirent.addresource.AddDUTIntf
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adddutintf</servlet-name>
+		<url-pattern>/adddutintf.do</url-pattern>
+	</servlet-mapping>		
+
+	<servlet>
+		<servlet-name>deleteresource</servlet-name>
+		<servlet-class>
+			com.spirent.deleteresource.DeleteResource
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteresource</servlet-name>
+		<url-pattern>/deleteresource.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.spirent.login.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/login.do</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.spirent.login.Register</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/register.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>com.spirent.admin.Admin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>collision</servlet-name>
+		<servlet-class>com.spirent.collision.DetectiveCollision</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>collision</servlet-name>
+		<url-pattern>/scheduler/collision.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>com.spirent.update.UpdateResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/updateresource.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatevmnotes</servlet-name>
+		<servlet-class>com.spirent.update.UpdateVMNotes</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatevmnotes</servlet-name>
+		<url-pattern>/updatevmnotes.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatevmlocation</servlet-name>
+		<servlet-class>com.spirent.update.UpdateVMLocation</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatevmlocation</servlet-name>
+		<url-pattern>/updatevmlocation.do</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>query</servlet-name>
+		<servlet-class>com.spirent.query.QueryResource</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>query</servlet-name>
+		<url-pattern>/queryresource.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>preferences</servlet-name>
+		<servlet-class>com.spirent.preferences.Preferences</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>preferences</servlet-name>
+		<url-pattern>/preferences.do</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>updateremindertime</servlet-name>
+		<servlet-class>
+			com.spirent.preferences.UpdateReminderTime
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateremindertime</servlet-name>
+		<url-pattern>/updateremindertime.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>property</servlet-name>
+		<servlet-class>com.spirent.property.Property</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>property</servlet-name>
+		<url-pattern>/property.do</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>utilizationreport</servlet-name>
+		<servlet-class>com.spirent.utilization.Reports</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>utilizationreport</servlet-name>
+		<url-pattern>/utilizationreport.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>  
+		<servlet-name>updateiprepnotes</servlet-name>
+		<servlet-class>
+			com.spirent.update.UpdateiPREPNotes
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateiprepnotes</servlet-name>
+		<url-pattern>/updateiprepnotes.do</url-pattern>
+	</servlet-mapping>	
+
+	<context-param>
+		<param-name>updateDBInternal</param-name>
+		<param-value>60</param-value>
+	</context-param>
+	<context-param>
+		<param-name>tclPath</param-name>
+                <param-value>E:/WorkSpace/MainLine/LRS/inventory/WebRoot/common/scripts/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>tclLibPath</param-name>
+		<param-value>C:/Tcl/lib/</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbPath</param-name>
+                <param-value>jdbc:mysql://10.2.10.139:3306/pv_inventory</param-value>
+	</context-param>
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>commonqa</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>Qahnl000</param-value>
+	</context-param>
+	<context-param>
+		<param-name>reminderTime</param-name>
+		<param-value>15</param-value>
+	</context-param>
+	<context-param>
+		<param-name>reminderDuration</param-name>
+		<param-value>30</param-value>
+	</context-param>
+	
+    <welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

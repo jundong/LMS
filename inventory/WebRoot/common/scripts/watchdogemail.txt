@@ -1,0 +1,5 @@
+LMS Watch Dog Alert:
+
+The LMS scan is out of date. Please check the scanner at the server or start the local scanning in the mean time.
+
+LMS Team
